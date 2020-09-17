@@ -27,6 +27,16 @@ development:
    <<: *default
    database: hello_world_development
 
+   test:
+  <<: *default
+  database: hello_world_test
+
+production:
+  <<: *default
+  database: hello_world_production
+  #username: myapp
+
+
 
    # The specified database role being used to connect to postgres.
    # To create additional roles in postgres see `$ createuser --help`.
